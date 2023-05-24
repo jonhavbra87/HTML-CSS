@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Courier Prime";
+  src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+
+img {
+  max-width: 300px;
+  float: left;
+  margin-right: 15px;
+}
+
+header {
+  background: #3e148b;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: "Courier Prime", Verdana, sans-serif;
+  background-color: rgb(172, 172, 172);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Courier New", Verdana, sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Courier New", Verdana, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  height: 40px;
+  width: 100%;
+  background: #efefef;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+.active {
+  background-color: #333333;
+  border: #000000;
+  color: #ffffff;
+}
+
+section::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 20px;
+  margin-top: 20px;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+footer {
+  background: #efefef;
+  padding: 20px;
+  text-align: center;
+}
+
+footer::before,
+footer::after {
+  content: "/";
+  font-size: 20px;
+  font-weight: bold;
+}
